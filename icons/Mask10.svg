@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="24" viewBox="0 0 25 24">
+  <defs>
+    <filter id="Rectangle_32" x="-90" y="-70" width="205" height="204" filterUnits="userSpaceOnUse">
+      <feOffset dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+      <feFlood flood-color="#051340" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_32)">
+        <rect id="Rectangle_32-2" data-name="Rectangle 32" width="25" height="24" transform="translate(974.95 3701)" fill="#ffbc57"/>
+      </g>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_10" data-name="Mask Group 10" transform="translate(-974.951 -3701)" clip-path="url(#clip-path)">
+    <path id="__TEMP__SVG__" d="M178.029,106.411c.584,0,1.98-1.588,3.227-4.432a24.9,24.9,0,0,0,2.126-8.478,5.372,5.372,0,1,0-10.705,0,24.9,24.9,0,0,0,2.126,8.477C176.048,104.822,177.445,106.411,178.029,106.411Zm0,2.676C173.594,109.087,170,98.2,170,93.5a8.042,8.042,0,1,1,16.058,0C186.058,98.2,182.464,109.087,178.029,109.087Zm0-13.382a2.676,2.676,0,1,0-2.676-2.676A2.676,2.676,0,0,0,178.029,95.705Z" transform="translate(809.524 3616)" fill="#ffbc57"/>
+  </g>
+</svg>

@@ -1,0 +1,476 @@
+* {
+  margin: 0;
+  --yellow: #ffbc57;
+  --blue: #000e3d;
+}
+
+body {
+  background-color: var(--blue);
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--blue);
+  box-shadow: inset 2px 0px 5px rgb(35, 20, 133);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--yellow);
+  border-radius: 50px;
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+.bg-yellow > p {
+  font-family: "Microsoft Tai Le";
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15px;
+  color: #051340;
+}
+.btn-yellow {
+  background-color: var(--yellow);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  width: 128px;
+  height: 45px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+}
+.btn-yellow,.btn-yellow-contained:hover {
+  text-decoration: none;
+  color: white;
+}
+.btn-yellow-contained {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  width: 128px;
+  height: 45px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: rgba(255, 153, 0, 0.26);
+  border: 1px solid #ffbc57;
+}
+.text-yellow {
+  color: var(--yellow);
+}
+
+.nav__img {
+  height: 50px;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  padding-bottom: 50px;
+}
+.contact-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  min-height: 35vh;
+}
+
+/* PREHEADER */
+.preheader00 {
+  padding: 0 !important;
+  top: 0;
+  left: 0 !important;
+  border-bottom: 1px solid gray;
+}
+.preheader-icon {
+  height: 15px;
+  padding: 13px 7px;
+  border-right: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preheader-icon > img {
+  height: 15px;
+}
+.preheader-right {
+  display: flex;
+}
+.preheader-content {
+  height: 15px;
+  width: auto;
+  padding: 13px 10px;
+  border-left: 1px solid gray;
+  display: flex;
+  align-items: center !important;
+}
+.preheader-content > p {
+  font-size: 12px;
+  height: 100%;
+  margin-left: 10px;
+  font-weight: 600;
+  display: none;
+}
+.preheader-content > img {
+  height: 15px;
+}
+/* PREHEADER ENDS HERE */
+
+/* Header */
+.header {
+  padding-top: 10px;
+  /* height: 100px; */
+  position: fixed;
+  z-index: 99;
+}
+.header__content {
+  margin-top: 20px;
+}
+.active_header {
+  background-color: #051340cc;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 2px 10px rgb(6, 3, 59);
+}
+.active_header > .header__content {
+  margin: 0 !important;
+}
+.nav-link {
+  color: #ffff;
+  cursor: pointer;
+}
+.nav-link:hover {
+  color: var(--yellow);
+}
+
+
+/* BANNER */
+.banner {
+  /* position: absolute; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  margin-top: 100px;
+  min-height: 40vh;
+}
+.contact-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  min-height: 30vh;
+}
+.banner-content > h1 {
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 40px;
+  text-align: left;
+}
+
+/* PROJECTS */
+.projects {
+  padding: 0 !important;
+}
+.project_img {
+  width: 100%;
+  height: 100%;
+}
+.project__picture {
+  min-height: 70vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 2px solid var(--yellow);
+  border-bottom: 2px solid var(--yellow);
+}
+.projects {
+  border-bottom: 2px solid var(--yellow);
+}
+#project__title > h1 {
+  font-family: "Microsoft Tai Le";
+  font-weight: bold;
+  font-size: 40px;
+  text-align: left;
+  color: #fff;
+}
+#project-content{
+  font-size: 16px;
+}
+.img-fluid {
+  cursor: pointer;
+  transition: 0.25s;
+}
+.img-fluid:hover {
+  transform: scale(1.125);
+}
+/* PROJECTS ENDS*/
+
+.chairman {
+  width: 100%;
+}
+.cl-box > img {
+  width: 100%;
+}
+.cl-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FAQs */
+.q-box {
+  background-color: rgba(255, 255, 255, 0.212);
+  color: white;
+  align-items: center;
+  padding: 15px 20px;
+  justify-content: space-between;
+  margin: 5px;
+  width: 100%;
+}
+.q-box-header > p {
+  height: 10px;
+}
+.q-box-header > img {
+  height: 15px;
+  cursor: pointer;
+}
+.q-box-header {
+  display: flex;
+  /* padding-bottom: 25px; */
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+/* FAQs ENDS */
+
+/* MAPS */
+.map-card {
+  background-color: white;
+  max-width: 500px;
+  position: absolute;
+  /* bottom: 0; */
+  z-index: 10;
+  right: 0;
+}
+.map-card-icon {
+  display: flex;
+  justify-content: center;
+}
+.map-card-icon > img {
+  height: 25px;
+  margin-top: 10px;
+}
+.map-card-text > h5 {
+  color: var(--blue);
+}
+.map-card-text > p {
+  color: var(--blue);
+}
+/* MAPS ENDS HERE */
+
+/* BLOG */
+.blog-img > img {
+  width: 100%;
+}
+.blog-time{
+  display: flex;
+}
+.blog-time > p{
+  margin-top: -2px;
+  font-size: 14px;
+  margin-left: 5px;
+  color: rgb(184, 184, 184);
+}
+.blog-time > img{
+  height: 18px !important;
+}
+.blog-content {
+  color: rgb(228, 228, 228);
+}
+.blog-content > p {
+  font-size: 16px;
+  color: rgb(194, 194, 194);
+}
+/* BLOG ENDS */
+
+/* FOOTER STARTS HERE */
+.footer {
+  background-color: rgba(0, 38, 255, 0.041);
+}
+.footer-links {
+  list-style: none;
+}
+.footer-links > li {
+  margin-left: -40px;
+  cursor: pointer;
+}
+.footer-links > li > a {
+  color: whitesmoke;
+}
+.footer-msg > input {
+  width: 100%;
+  outline: none;
+  height: 45px;
+  padding: 5px 10px;
+}
+.footer-msg > button {
+  height: 35px;
+  width: 100px;
+  margin-top: 10px;
+}
+/* FOOTER ENDS HERE */
+
+.contact__input {
+  border-radius: 5px;
+  border: 1px solid rgb(189, 189, 189);
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .preheader-content {
+    float: right;
+  }
+  .preheader-content > p {
+    display: block;
+  }
+  .banner-content > h1 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* BANNER */
+  .hero{
+    height: 100vh;
+  }
+  .header {
+    border: none;
+    margin-top: -15px;
+    background-color: var(--blue);
+  }
+  .active_header {
+    background-color: #051340cc;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 2px 10px rgb(6, 3, 59);
+  }
+  .contact-button {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .navbar-nav {
+    margin-top: 50px;
+  }
+  .client-logo-row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+  }
+  .cl-box > img {
+    margin: 10px;
+  }
+  .banner {
+    height: 80vh;
+  }
+  .banner-content > h1 {
+    font-size: 30px;
+  }
+  .preheader {
+    display: none;
+  }
+  .nav__img {
+    margin-left: 20px;
+  }
+
+
+
+.about-chairman{
+  margin-top: 20px;
+}
+
+
+  
+
+
+  /* PROJECTS */
+  #project__title {
+    margin-top: -100px;
+    margin-left: -30px;
+  }
+  #project__title > h1 {
+    font-size: 22px;
+  }
+  #project__title > p {
+    font-size: 15px;
+  }
+
+  /* FAQS */
+  .FAQ {
+    padding: 0px 20px !important;
+    margin-top: 50px;
+    margin-left: -4px;
+  }
+  .questions {
+    padding: 0 !important;
+  }
+  .q-box-header {
+    padding-bottom: 20px;
+  }
+  /* FAQS ENDS */
+
+  /* BLOGS */
+  .blogs {
+    margin-top: 50px;
+  }
+  .blogs-row {
+    padding: 20px !important;
+  }
+  .blog-time{
+    margin-top: 30px;
+  }
+  .blog-content > h4 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .blog-content > p {
+    font-size: 16px;
+  }
+  /* BLOGS ENDS HERE */
+
+  /* FOOTER */
+  .footer {
+    padding-top: 50px;
+  }
+  .footer-container {
+    padding: 0 !important;
+  }
+  .footer-row {
+    padding: 15px !important;
+  }
+  /* FOOTER ENDS HERE */
+}
